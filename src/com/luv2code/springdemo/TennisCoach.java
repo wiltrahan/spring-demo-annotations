@@ -14,16 +14,25 @@ public class TennisCoach implements Coach {
 	}
 	
 	//define setter method
+//	@Autowired
+//	public void setFortuneService(FortuneService theFortuneService) {
+//		System.out.println(">> TennisCoach: inside setFortuneService() method");
+//		fortuneService = theFortuneService;
+//	}
+	
 	@Autowired
-	public void setFortuneService(FortuneService theFortuneService) {
-		System.out.println(">> TennisCoach: inside setFortuneService() method");
+	public void doSomeCrazyStuff(FortuneService theFortuneService) {
+		System.out.println(">> TennisCoach: inside doSomeCrazyStuff() method");
 		fortuneService = theFortuneService;
 	}
-	
 //	@Autowired
 //	public TennisCoach(FortuneService theFortuneService) {
 //		fortuneService = theFortuneService;
 //	}
+	@Autowired
+	public void myTest(FortuneService theFortuneService) {
+		System.out.println("MY TEST");
+	}
 
 	@Override
 	public String getDailyWorkout() {
