@@ -1,8 +1,6 @@
 package com.luv2code.springdemo;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
+//import javax.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 //import org.springframework.context.annotation.Scope;
@@ -22,13 +20,13 @@ public class TennisCoach implements Coach {
 	}
 	
 	//define my init method
-	@PostConstruct
+//	@PostConstruct
 	public void doMyStartupStuff() {
 		System.out.println(">> TennisCoach: inside of doMyStartupStuff()");
 	}
 	
 	//define my destroy method
-	@PreDestroy
+//	@PreDestroy
 	public void doMyCleanupStuff() {
 		System.out.println(">> TennisCoach: inside of doMyCleanupStuff()");
 	}
