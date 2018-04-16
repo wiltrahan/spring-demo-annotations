@@ -322,5 +322,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="lib/javax.annotation-api-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/org.springframework.context-3.0.4.release.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
